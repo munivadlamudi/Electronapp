@@ -1,0 +1,12 @@
+*.csv
+*.xlsx
+data/
+N50data/
+Nifty_All500/
+Nifty_next50/
+credentials.json
+credentials*
+*lock.json
+*.json
+node_modules/
+dist/

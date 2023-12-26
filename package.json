@@ -1,0 +1,19 @@
+{
+  "name": "license-scanner-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js",
+    "package": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.0"
+  },
+  "dependencies": {
+    "tesseract.js": "^5.0.4"
+  }
+}

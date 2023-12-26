@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>License Scanner App</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+<body>
+  <h1>License Scanner App</h1>
+  <input type="file" id="fileInput" accept="image/*">
+  <button onclick="scanLicense()">Scan Licenses</button>
+  <button onclick="extractTextFromImage()">Extract Text</button>
+  <div id="result" style="border: 1px solid #000; padding: 10px;"></div>
+  <script>
+    if (typeof require === 'function') {
+      const { ipcRenderer } = require('electron');
+      window.ipcRenderer = ipcRenderer;
+    }
+  </script>
+
+  
+  
+  <script src="renderer.js"></script>
+</body>
+</html>
